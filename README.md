@@ -67,6 +67,8 @@ $ git clone https://github.com/bielpatricio/api-ignite-gym
 $ cd api-ignite-gym
 # Install the dependencies
 $ npm i
+# Run the docker
+$ docker compose up -d
 # Run the application in development mode
 $ npm run dev
 # The application will runing on port 3333, so you can access the url http://localhost:3333/ to do the requests.

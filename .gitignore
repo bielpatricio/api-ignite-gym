@@ -1,5 +1,6 @@
 # Dependecies
 node_modules
+coverage
 
 #database
 db/*.db
