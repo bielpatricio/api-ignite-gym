@@ -30,7 +30,7 @@ describe('Check-in Use Case', () => {
     vi.useRealTimers()
   })
 
-  it('should be able to check in', async () => {
+  it('should be able to check-in', async () => {
     const { checkIn } = await sut.execute({
       gymId: 'gym-01',
       userId: 'user-01',
