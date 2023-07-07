@@ -29,31 +29,31 @@ GymPass style app.
 
 ## RFs (Functional requirements)
 
-- [ ] It must be possible to register;
-- [ ] It must be possible to authenticate;
-- [ ] It must be possible to obtain the profile of a logged in user;
-- [ ] It must be possible to obtain the number of check-ins performed by the logged-in user;
-- [ ] It must be possible for the user to obtain his check-in history;
+- [X] It must be possible to register;
+- [X] It must be possible to authenticate;
+- [X] It must be possible to obtain the profile of a logged in user;
+- [X] It must be possible to obtain the number of check-ins performed by the logged-in user;
+- [X] It must be possible for the user to obtain his check-in history;
 - [ ] It must be possible for the user to search for nearby gyms;
 - [ ] It must be possible for the user to search for gyms by name;
-- [ ] It must be possible for the user to check-in at a gym;
+- [X] It must be possible for the user to check-in at a gym;
 - [ ] It must be possible to validate a user's check-in;
-- [ ] It must be possible to register an academy;
+- [X] It must be possible to register an academy;
 
 ## RNs (Business rules)
 
-- [ ] The user must not be able to register with a duplicate email;
-- [ ] The user cannot make 2 check-ins on the same day;
-- [ ] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
-- [ ] O usuário não pode fazer check-in se não estiver perto (100m) da academia;
+- [X] The user must not be able to register with a duplicate email;
+- [X] The user cannot make 2 check-ins on the same day;
+- [X] User cannot check-in if they are not close (100m) to the gym;
+- [ ] Check-in can only be validated up to 20 minutes after being created;
 - [ ] Check-in can only be validated by administrators;
 - [ ] The academy can only be registered by administrators;
 
 ## RNFs (Non-functional requirements)
 
-- [ ] The user's password must be encrypted;
-- [ ] Application data must be persisted in a PostgreSQL database;
-- [ ] All data lists must be paginated with 20 items per page;
+- [X] The user's password must be encrypted;
+- [X] Application data must be persisted in a PostgreSQL database;
+- [X] All data lists must be paginated with 20 items per page;
 - [ ] The user must be identified by a JWT (JSON Web Token);
 
 <br>
