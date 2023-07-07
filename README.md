@@ -23,7 +23,7 @@
 
 # About The Project
 
-Daily Diet api, challenge 2 from ignite nodeJS from rocketseat.
+Ignite gym api.
 
 GymPass style app.
 
@@ -73,129 +73,11 @@ $ docker compose up -d
 $ npm run dev
 # The application will runing on port 3333, so you can access the url http://localhost:3333/ to do the requests.
 # Run the tests
-$ npm test:users
-$ npm test:meals
-```
-
-# Routes
-
-For the project, some routes were created:
-
-## User
-
-```
-  1. Create a user
-    (POST) http://localhost:3333/users
-    1.1 body
-      {
-          "username": "bieu",
-          "email": "bieu@gmail.com",
-          "password": "123",
-          "confirmPassword": "123"
-      }
-
-  2. Login a user
-    (PUT) http://localhost:3333/users/login
-    2.1 body
-      {
-          "username": "bieu",
-          "password": "123"
-      }
-
-  3. Get a user
-    (GET) http://localhost:3333/users
-
-    response example:
-
-      {
-          "total": 5,
-          "totalInDiet": 4,
-          "totalOutDiet": 1,
-          "BestSequence": 3,
-          "user": {
-              "id": "ffa20cb0-a010-4aae-976a-91070cb779b6",
-              "username": "bieu",
-              "email": "bieu@gmail.com",
-          }
-      }
-
-  4. Delete a user
-    (DELETE) http://localhost:3333/users/:id
-```
-
-## Meal
-
-```
-  1. Create a meal
-    (POST) http://localhost:3333/meals
-    1.1 body
-      {
-          "name": "jantar",
-          "description": "ovos e cuscuz",
-          "inDiet": true,
-          "date": "{{currentdate}}"
-      }
-
-  2. Put a meal
-    (PUT) http://localhost:3333/meals/:id
-    2.1 body
-      {
-          "name": "Cafe",
-          "description": "ovos e mamão",
-          "inDiet": true,
-          "date": "{{currentdate}}"
-      }
-
-  3. Get a meal by id
-    (GET) http://localhost:3333/meals/:id
-
-    response example:
-
-      {
-          "id": "84ceba1d-ebc8-4508-9507-6efcbf490544",
-          "session_id": "93d3e512-32be-45ae-b055-7e704ff2ce13",
-          "name": "Cafe",
-          "description": "ovos e mamão",
-          "date": "2023-06-19T15:42:11-03:00",
-          "inDiet": true,
-          "createdAt": "2023-06-19 17:15:12",
-          "updatedAt": "2023-06-19 18:42:11"
-      }
-
-  4. Get all meals
-      (GET) http://localhost:3333/meals
-  
-      response example:
-  
-        {
-            "total": 2,
-            "meals": [
-                {
-                    "id": "84ceba1d-ebc8-4508-9507-6efcbf490544",
-                    "session_id": "93d3e512-32be-45ae-b055-7e704ff2ce13",
-                    "name": "Cafe",
-                    "description": "ovos e mamão",
-                    "date": "2023-06-19T15:42:11-03:00",
-                    "inDiet": true,
-                    "createdAt": "2023-06-19 17:15:12",
-                    "updatedAt": "2023-06-19 18:42:11"
-                },
-                {
-                    "id": "8323b7c9-4c7a-4871-97ce-614239d96b79",
-                    "session_id": "93d3e512-32be-45ae-b055-7e704ff2ce13",
-                    "name": "janta",
-                    "description": "ovo com bacon",
-                    "date": "2023-06-19T14:15:21-03:00",
-                    "inDiet": false,
-                    "createdAt": "2023-06-19 17:15:21",
-                    "updatedAt": "2023-06-19 17:47:51"
-                },
-            ]
-        }
-
-
-  5. Delete a meal
-    (DELETE) http://localhost:3333/meals/:id
+$ npm run test
+# Run the tests and get a relatory
+$ npm run test:coverage
+# Run the tests and open a interface to see better
+$ npm run test:ui
 ```
 
 # Contact
