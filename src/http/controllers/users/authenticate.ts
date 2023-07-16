@@ -22,8 +22,6 @@ export async function authenticate(
       password,
     })
 
-    console.log('authent roooole', user)
-
     const token = await reply.jwtSign(
       {
         role: user.role,
