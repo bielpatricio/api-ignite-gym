@@ -25,36 +25,36 @@
 
 Ignite gym api.
 
-GymPass style app.
+GymPass style app. All Functional requirements, Business rules and Non-functional requirements were added.
 
 ## RFs (Functional requirements)
 
-- [X] It must be possible to register;
-- [X] It must be possible to authenticate;
-- [X] It must be possible to obtain the profile of a logged in user;
-- [X] It must be possible to obtain the number of check-ins performed by the logged-in user;
-- [X] It must be possible for the user to obtain his check-in history;
-- [X] It must be possible for the user to search for nearby gyms (under 10km);
-- [X] It must be possible for the user to search for gyms by name;
-- [X] It must be possible for the user to check-in at a gym;
-- [X] It must be possible to validate a user's check-in;
-- [X] It must be possible to register an academy;
+- It must be possible to register;
+- It must be possible to authenticate;
+- It must be possible to obtain the profile of a logged in user;
+- It must be possible to obtain the number of check-ins performed by the logged-in user;
+- It must be possible for the user to obtain his check-in history;
+- It must be possible for the user to search for nearby gyms (under 10km);
+- It must be possible for the user to search for gyms by name;
+- It must be possible for the user to check-in at a gym;
+- It must be possible to validate a user's check-in;
+- It must be possible to register an academy;
 
 ## RNs (Business rules)
 
-- [X] The user must not be able to register with a duplicate email;
-- [X] The user cannot make 2 check-ins on the same day;
-- [X] User cannot check-in if they are not close (100m) to the gym;
-- [X] Check-in can only be validated up to 20 minutes after being created;
-- [X] Check-in can only be validated by administrators;
-- [X] The academy can only be registered by administrators;
+- The user must not be able to register with a duplicate email;
+- The user cannot make 2 check-ins on the same day;
+- User cannot check-in if they are not close (100m) to the gym;
+- Check-in can only be validated up to 20 minutes after being created;
+- Check-in can only be validated by administrators;
+- The academy can only be registered by administrators;
 
 ## RNFs (Non-functional requirements)
 
-- [X] The user's password must be encrypted;
-- [X] Application data must be persisted in a PostgreSQL database;
-- [X] All data lists must be paginated with 20 items per page;
-- [X] The user must be identified by a JWT (JSON Web Token);
+- The user's password must be encrypted;
+- Application data must be persisted in a PostgreSQL database;
+- All data lists must be paginated with 20 items per page;
+- The user must be identified by a JWT (JSON Web Token);
 
 <br>
 
