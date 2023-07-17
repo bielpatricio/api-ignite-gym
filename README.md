@@ -46,15 +46,15 @@ GymPass style app.
 - [X] The user cannot make 2 check-ins on the same day;
 - [X] User cannot check-in if they are not close (100m) to the gym;
 - [X] Check-in can only be validated up to 20 minutes after being created;
-- [ ] Check-in can only be validated by administrators;
-- [ ] The academy can only be registered by administrators;
+- [X] Check-in can only be validated by administrators;
+- [X] The academy can only be registered by administrators;
 
 ## RNFs (Non-functional requirements)
 
 - [X] The user's password must be encrypted;
 - [X] Application data must be persisted in a PostgreSQL database;
 - [X] All data lists must be paginated with 20 items per page;
-- [ ] The user must be identified by a JWT (JSON Web Token);
+- [X] The user must be identified by a JWT (JSON Web Token);
 
 <br>
 
@@ -70,10 +70,12 @@ $ npm i
 # Run the docker
 $ docker compose up -d
 # Run the application in development mode
-$ npm run dev
+$ npm run start:dev
 # The application will runing on port 3333, so you can access the url http://localhost:3333/ to do the requests.
-# Run the tests
+# Run the unit tests
 $ npm run test
+# Run the E2E tests
+$ npm run test:e2e
 # Run the tests and get a relatory
 $ npm run test:coverage
 # Run the tests and open a interface to see better
