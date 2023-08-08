@@ -25,7 +25,7 @@ export class inMemoryUsersRepository implements UsersRepository {
     return user
   }
 
-  async create(data: Prisma.UserCreateInput) {
+  async create(data: Prisma.UserUncheckedCreateInput) {
     const user = {
       id: randomUUID(),
       name: data.name,
@@ -33,6 +33,7 @@ export class inMemoryUsersRepository implements UsersRepository {
       password_hash: data.password_hash,
       created_at: new Date(),
       updated_at: new Date(),
+      role: data.role ?? 'MEMBER',
     }
 
     this.items.push(user)

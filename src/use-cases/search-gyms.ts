@@ -11,7 +11,7 @@ interface SearchGymsUseCaseResponse {
 }
 
 export class SearchGymsUseCase {
-  constructor(private gymsRepository: GymsRepository) { }
+  constructor(private gymsRepository: GymsRepository) {}
 
   async execute({
     query,
